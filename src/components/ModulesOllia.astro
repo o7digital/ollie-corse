@@ -1,0 +1,37 @@
+---
+const modules = [
+  'Producteurs & artisans géolocalisés',
+  'Réservations d’ateliers et d’expériences',
+  'Back-office fournisseurs',
+  'Storytelling des filières corses',
+  'QR codes sur lieux et produits',
+  'Notifications ciblées par zone',
+  'SEO multilingue FR / EN',
+  'Conformité RGPD & architecture scalable',
+]
+---
+
+<section class="relative overflow-hidden border-y border-white/[0.08] bg-white/[0.03] px-6 py-24 sm:px-8 lg:px-10 lg:py-32">
+  <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_0%_50%,rgba(216,194,150,0.08),transparent_0_26%),radial-gradient(circle_at_100%_0%,rgba(92,166,184,0.08),transparent_0_24%)]"></div>
+
+  <div class="mx-auto max-w-7xl">
+    <div class="max-w-3xl">
+      <p class="text-xs font-semibold uppercase tracking-[0.28em] text-[#dcc89f]/80">Modules clés</p>
+      <h2 class="mt-4 font-['Cormorant_Garamond'] text-4xl leading-none text-white sm:text-5xl lg:text-[3.6rem]">
+        Une base fonctionnelle solide, lisible et évolutive
+      </h2>
+      <p class="mt-6 text-base leading-7 text-white/68 sm:text-lg">
+        L’idée n’est pas seulement de faire joli. Il faut une architecture claire pour porter le périmètre du projet : contenus, réservation, profils pros, admin, mobile, SEO, reporting et conformité.
+      </p>
+    </div>
+
+    <div class="mt-14 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+      {modules.map((item) => (
+        <article class="group rounded-[1.8rem] border border-white/10 bg-white/[0.04] p-6 shadow-[0_22px_60px_rgba(2,6,10,0.20)] backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-[#dcc89f]/28 hover:bg-white/[0.07]">
+          <div class="h-2.5 w-16 rounded-full bg-gradient-to-r from-[#5ca6b8] via-[#dcc89f] to-transparent"></div>
+          <h3 class="mt-6 font-['Cormorant_Garamond'] text-[2rem] leading-none text-white">{item}</h3>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

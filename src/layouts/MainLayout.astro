@@ -1,0 +1,38 @@
+---
+import '../styles/global.css'
+
+interface Props {
+  title?: string
+  description?: string
+}
+
+const {
+  title = 'Ollia Corsica — Plateforme digitale premium',
+  description = 'Plateforme digitale premium pour valoriser la Corse, ses producteurs, ses expériences et ses filières à travers un écosystème web et mobile immersif.',
+} = Astro.props
+---
+
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="min-h-screen overflow-x-hidden bg-[#0b1015] font-['Manrope'] text-white antialiased selection:bg-[#d7c296]/30 selection:text-white">
+    <div class="fixed inset-0 -z-30 bg-[linear-gradient(180deg,#0b1015_0%,#0e151b_48%,#10171e_100%)]"></div>
+    <div class="fixed inset-0 -z-20 bg-[radial-gradient(circle_at_14%_18%,rgba(95,163,180,0.15),transparent_0_24%),radial-gradient(circle_at_82%_0%,rgba(222,191,140,0.12),transparent_0_26%),radial-gradient(circle_at_50%_100%,rgba(122,102,168,0.08),transparent_0_20%)]"></div>
+    <div class="fixed inset-0 -z-10 opacity-50 [background-image:radial-gradient(rgba(255,255,255,0.06)_0.8px,transparent_0.8px)] [background-size:28px_28px] [mask-image:radial-gradient(circle_at_center,black,transparent_92%)]"></div>
+    <div class="fixed inset-x-0 top-0 -z-10 h-[32rem] bg-[radial-gradient(circle_at_50%_0%,rgba(216,194,150,0.12),transparent_0_58%)] blur-3xl"></div>
+    <main class="relative">
+      <slot />
+    </main>
+  </body>
+</html>

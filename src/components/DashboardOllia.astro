@@ -1,0 +1,128 @@
+---
+const stats = [
+  { label: 'Utilisateurs', value: '2 480', detail: '+18% ce mois' },
+  { label: 'Réservations', value: '318', detail: 'Temps réel' },
+  { label: 'Partenaires actifs', value: '96', detail: 'Multi-zones' },
+]
+
+const adminSteps = [
+  'Validation des profils producteurs',
+  'Gestion des ateliers et disponibilités',
+  'Suivi des paiements et commissions',
+  'Modération des contenus UGC',
+  'Reporting stratégique par territoire',
+]
+---
+
+<section id="dashboard" class="relative px-6 py-24 sm:px-8 lg:px-10 lg:py-32">
+  <div class="mx-auto max-w-7xl">
+    <div class="max-w-3xl">
+      <p class="text-xs font-semibold uppercase tracking-[0.28em] text-[#dcc89f]/80">Back-office Ollia</p>
+      <h2 class="mt-4 font-['Cormorant_Garamond'] text-4xl leading-none text-white sm:text-5xl lg:text-[3.6rem]">
+        Pilotage éditorial & opérationnel
+      </h2>
+    </div>
+
+    <div class="mt-14 grid gap-6 xl:grid-cols-[1.12fr_0.88fr]">
+      <div class="overflow-hidden rounded-[2.25rem] border border-white/10 bg-white/[0.05] p-6 shadow-[0_30px_90px_rgba(2,6,10,0.28)] backdrop-blur-2xl sm:p-8">
+        <div class="flex flex-col gap-5 border-b border-white/10 pb-6 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p class="text-xs uppercase tracking-[0.24em] text-white/42">Dashboard premium</p>
+            <p class="mt-3 font-['Cormorant_Garamond'] text-4xl text-white">Orchestration multi-acteurs</p>
+          </div>
+          <div class="rounded-full border border-white/10 bg-white/[0.07] px-4 py-2 text-xs uppercase tracking-[0.2em] text-white/60">
+            Admin / Pro / Support
+          </div>
+        </div>
+
+        <div class="mt-8 grid gap-4 md:grid-cols-3">
+          {stats.map((item) => (
+            <article class="rounded-[1.6rem] border border-white/10 bg-[#101820]/88 p-5">
+              <p class="text-xs uppercase tracking-[0.2em] text-white/42">{item.label}</p>
+              <p class="mt-4 font-['Cormorant_Garamond'] text-5xl leading-none text-white">{item.value}</p>
+              <p class="mt-3 text-sm text-white/62">{item.detail}</p>
+            </article>
+          ))}
+        </div>
+
+        <div class="mt-6 grid gap-4 lg:grid-cols-[1.08fr_0.92fr]">
+          <article class="rounded-[1.8rem] border border-white/10 bg-white/[0.04] p-6">
+            <div class="flex items-center justify-between gap-4">
+              <div>
+                <p class="text-xs uppercase tracking-[0.2em] text-white/42">Parcours d’administration</p>
+                <p class="mt-3 font-['Cormorant_Garamond'] text-3xl text-white">Validation, contenus et performance</p>
+              </div>
+              <div class="h-12 w-12 rounded-[1.2rem] bg-[linear-gradient(145deg,rgba(92,166,184,0.24),rgba(216,194,150,0.18))]"></div>
+            </div>
+
+            <div class="mt-6 space-y-3">
+              {adminSteps.map((item) => (
+                <div class="flex items-center gap-3 rounded-[1.2rem] border border-white/10 bg-white/[0.04] px-4 py-3 text-sm text-white/74">
+                  <span class="h-2.5 w-2.5 rounded-full bg-[#dcc89f]"></span>
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
+          </article>
+
+          <article class="rounded-[1.8rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.07),rgba(255,255,255,0.03))] p-6">
+            <p class="text-xs uppercase tracking-[0.2em] text-white/42">Vue mobile</p>
+            <div class="mx-auto mt-6 max-w-[17rem] rounded-[2rem] border border-white/10 bg-[#0d151c] p-3 shadow-[0_20px_55px_rgba(3,8,14,0.28)]">
+              <div class="rounded-[1.6rem] bg-[linear-gradient(180deg,rgba(92,166,184,0.18),rgba(136,119,175,0.10),rgba(255,255,255,0.04))] p-4">
+                <p class="text-sm text-white/62">Challenge du jour</p>
+                <p class="mt-3 font-['Cormorant_Garamond'] text-3xl leading-none text-white">
+                  Scanner 3 QR codes artisanaux
+                </p>
+                <div class="mt-6 rounded-[1.25rem] border border-[#dcc89f]/18 bg-[#dcc89f]/12 p-4">
+                  <p class="text-sm text-white/62">Récompense</p>
+                  <p class="mt-2 font-['Cormorant_Garamond'] text-4xl text-white">+120 points</p>
+                </div>
+                <div class="mt-4 rounded-[1.25rem] border border-white/10 bg-white/[0.05] px-4 py-4">
+                  <p class="text-xs uppercase tracking-[0.2em] text-white/42">Badge</p>
+                  <p class="mt-2 text-lg font-semibold text-white">Route des saveurs</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="grid gap-6">
+        <article class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.05] p-7 shadow-[0_24px_70px_rgba(2,6,10,0.24)] backdrop-blur-xl">
+          <p class="text-xs uppercase tracking-[0.22em] text-[#dcc89f]/78">Cadence éditoriale</p>
+          <p class="mt-4 font-['Cormorant_Garamond'] text-4xl text-white">Suivi territoire, validation et mise en avant</p>
+          <div class="mt-8 space-y-4">
+            <div class="rounded-[1.35rem] border border-white/10 bg-white/[0.04] p-4">
+              <p class="text-sm font-semibold text-white">Atelier vannerie</p>
+              <p class="mt-2 text-sm text-white/60">Validé pour mise en avant</p>
+            </div>
+            <div class="rounded-[1.35rem] border border-white/10 bg-white/[0.04] p-4">
+              <p class="text-sm font-semibold text-white">Fête du terroir</p>
+              <p class="mt-2 text-sm text-white/60">Slots de réservation mis à jour</p>
+            </div>
+            <div class="rounded-[1.35rem] border border-white/10 bg-white/[0.04] p-4">
+              <p class="text-sm font-semibold text-white">Producteur miel AOP</p>
+              <p class="mt-2 text-sm text-white/60">Dossier institutionnel complété</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.05] p-7 shadow-[0_24px_70px_rgba(2,6,10,0.24)] backdrop-blur-xl">
+          <p class="text-xs uppercase tracking-[0.22em] text-[#dcc89f]/78">Signal opérationnel</p>
+          <p class="mt-4 font-['Cormorant_Garamond'] text-4xl text-white">Réservations, partenaires et zones actives</p>
+          <div class="mt-8 grid gap-3">
+            <div class="rounded-[1.35rem] border border-white/10 bg-[#5ca6b8]/10 px-4 py-4 text-sm text-cyan-100">
+              Balagne — 74 dossiers actifs
+            </div>
+            <div class="rounded-[1.35rem] border border-white/10 bg-[#dcc89f]/10 px-4 py-4 text-sm text-[#f2e7cc]">
+              Ajaccio — 58 expériences live
+            </div>
+            <div class="rounded-[1.35rem] border border-white/10 bg-[#8877af]/10 px-4 py-4 text-sm text-white/84">
+              Sud Corse — 92 scans QR / jour
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
