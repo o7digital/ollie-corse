@@ -1,0 +1,91 @@
+<svg width="1600" height="1800" viewBox="0 0 1600 1800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="800" y1="0" x2="800" y2="1800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17303A"/>
+      <stop offset="0.28" stop-color="#13252E"/>
+      <stop offset="0.65" stop-color="#0F1820"/>
+      <stop offset="1" stop-color="#0B1015"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1110 330) rotate(118.915) scale(587.642 490.199)">
+      <stop stop-color="#F0D9AA" stop-opacity="0.92"/>
+      <stop offset="0.22" stop-color="#DAB77B" stop-opacity="0.44"/>
+      <stop offset="0.58" stop-color="#5CA6B8" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#0B1015" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sea" x1="573" y1="792" x2="631" y2="1460" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D4851"/>
+      <stop offset="0.42" stop-color="#12313A"/>
+      <stop offset="1" stop-color="#0D161D"/>
+    </linearGradient>
+    <linearGradient id="cliff" x1="1150" y1="566" x2="1310" y2="1402" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B7A61"/>
+      <stop offset="0.3" stop-color="#695B48"/>
+      <stop offset="0.7" stop-color="#372F29"/>
+      <stop offset="1" stop-color="#15181C"/>
+    </linearGradient>
+    <linearGradient id="cliffLight" x1="1050" y1="710" x2="1432" y2="1110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5E0B7" stop-opacity="0.65"/>
+      <stop offset="0.35" stop-color="#D6B17B" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#D6B17B" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="mountainFar" x1="614" y1="560" x2="602" y2="946" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#243A46"/>
+      <stop offset="1" stop-color="#10191F"/>
+    </linearGradient>
+    <linearGradient id="mountainNear" x1="701" y1="711" x2="723" y2="1091" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1C3038"/>
+      <stop offset="1" stop-color="#0C1217"/>
+    </linearGradient>
+    <radialGradient id="waterGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(811 1016) rotate(90) scale(389 552)">
+      <stop stop-color="#87BCC8" stop-opacity="0.26"/>
+      <stop offset="0.32" stop-color="#4E7680" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#0B1015" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.95" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0 0.06 0.1"/>
+      </feComponentTransfer>
+    </filter>
+    <filter id="softBlur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="36"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1800" fill="url(#sky)"/>
+  <rect width="1600" height="1800" fill="url(#sunGlow)"/>
+
+  <path d="M0 720C144 662 262 674 392 632C497 598 568 526 690 518C839 508 947 587 1080 601C1225 617 1402 549 1600 542V1800H0V720Z" fill="url(#mountainFar)"/>
+  <path d="M0 818C173 754 272 801 422 748C524 711 594 637 722 639C893 641 996 761 1149 791C1294 821 1403 781 1600 724V1800H0V818Z" fill="url(#mountainNear)"/>
+  <path d="M90 1182C262 1000 428 930 637 938C812 945 917 1026 1008 1128C1123 1258 1143 1381 1210 1522C1247 1599 1297 1689 1379 1800H0V1392C31 1326 61 1246 90 1182Z" fill="url(#sea)"/>
+  <path d="M713 930C818 967 920 1061 989 1184C1047 1285 1081 1424 1182 1540C1295 1669 1462 1737 1600 1764V1800H646C663 1682 679 1542 672 1434C658 1225 605 1089 713 930Z" fill="url(#waterGlow)"/>
+
+  <path d="M1070 680C1131 611 1202 585 1260 590C1320 594 1376 625 1432 725C1494 836 1535 991 1600 1144V1800H1114C1128 1658 1116 1538 1089 1408C1045 1198 961 1000 1070 680Z" fill="url(#cliff)"/>
+  <path d="M1092 722C1140 657 1192 625 1246 627C1307 629 1364 676 1409 764C1453 848 1489 955 1535 1050L1537 1123C1479 1033 1433 944 1391 888C1344 825 1300 807 1250 810C1196 814 1140 852 1081 928C1079 857 1083 790 1092 722Z" fill="url(#cliffLight)"/>
+
+  <path d="M1016 911C1080 877 1148 879 1198 911C1248 944 1282 1003 1293 1090C1308 1210 1276 1337 1189 1452C1148 1506 1087 1564 1010 1608C1038 1522 1040 1420 1018 1318C1002 1247 969 1157 958 1070C952 1018 963 961 1016 911Z" fill="#101820" fill-opacity="0.66"/>
+
+  <g opacity="0.9">
+    <circle cx="1127" cy="965" r="4" fill="#F5DEB2"/>
+    <circle cx="1148" cy="954" r="3" fill="#F2D59F"/>
+    <circle cx="1167" cy="978" r="3.5" fill="#FFECCC"/>
+    <circle cx="1183" cy="996" r="2.6" fill="#F6D8A9"/>
+    <circle cx="1201" cy="984" r="2.6" fill="#F6D8A9"/>
+    <circle cx="1220" cy="1015" r="3.2" fill="#FFECCC"/>
+    <circle cx="1240" cy="1030" r="2.8" fill="#F4D19D"/>
+    <circle cx="1212" cy="1042" r="2.4" fill="#FFECCC"/>
+    <circle cx="1178" cy="1034" r="2.6" fill="#F5DEB2"/>
+  </g>
+
+  <path d="M1040 1022C1110 990 1180 1004 1228 1049" stroke="#E8CF9C" stroke-opacity="0.35" stroke-width="2" stroke-linecap="round"/>
+  <path d="M1114 1072C1168 1060 1208 1075 1245 1110" stroke="#E8CF9C" stroke-opacity="0.28" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M853 1261C936 1225 1018 1234 1077 1278" stroke="#8DB8C4" stroke-opacity="0.22" stroke-width="2" stroke-linecap="round"/>
+  <path d="M782 1364C905 1312 1034 1330 1129 1407" stroke="#8DB8C4" stroke-opacity="0.18" stroke-width="1.5" stroke-linecap="round"/>
+
+  <ellipse cx="786" cy="997" rx="212" ry="116" fill="#CFA56A" fill-opacity="0.12" filter="url(#softBlur)"/>
+  <ellipse cx="1286" cy="486" rx="173" ry="104" fill="#F0D9AA" fill-opacity="0.18" filter="url(#softBlur)"/>
+
+  <rect width="1600" height="1800" fill="black" fill-opacity="0.08" filter="url(#grain)"/>
+  <rect width="1600" height="1800" fill="url(#sky)" fill-opacity="0.14"/>
+</svg>
