@@ -1,4 +1,4 @@
-<section class="relative isolate overflow-hidden px-6 pb-24 pt-8 sm:px-8 lg:px-10 lg:pb-32 lg:pt-10">
+<section id="hero-ollia" class="relative isolate overflow-hidden px-6 pb-24 pt-8 sm:px-8 lg:px-10 lg:pb-32 lg:pt-10" data-lang="fr">
   <div class="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_10%_20%,rgba(92,161,178,0.14),transparent_0_24%),radial-gradient(circle_at_86%_16%,rgba(215,190,143,0.10),transparent_0_22%),radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.03),transparent_0_40%)]"></div>
   <div class="absolute inset-y-0 left-1/2 -z-10 hidden w-[44rem] -translate-x-1/2 bg-[radial-gradient(circle_at_center,rgba(215,190,143,0.10),transparent_60%)] blur-[120px] lg:block"></div>
   <div class="absolute inset-0 -z-10 opacity-30 [background-image:repeating-radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.08)_0_1px,transparent_1px_20px),repeating-radial-gradient(circle_at_80%_10%,rgba(215,190,143,0.10)_0_1px,transparent_1px_22px)] [mask-image:linear-gradient(180deg,transparent,black_18%,black_82%,transparent)]"></div>
@@ -8,16 +8,16 @@
       <div class="max-w-3xl">
         <div class="inline-flex w-fit items-center gap-3 rounded-full border border-white/12 bg-white/[0.04] px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#dcc89f] backdrop-blur">
           <span class="h-2 w-2 rounded-full bg-[#dcc89f]"></span>
-          Mockup conceptuel — Ollia® Corsica
+          <span data-i18n="mockup_badge">Mockup conceptuel — Ollia® Corsica</span>
         </div>
 
-        <p class="mt-8 text-xs uppercase tracking-[0.32em] text-white/45">Destination digitale premium</p>
+        <p class="mt-8 text-xs uppercase tracking-[0.32em] text-white/45" data-i18n="destination_badge">Destination digitale premium</p>
 
-        <h1 class="mt-6 max-w-3xl font-['Cormorant_Garamond'] text-[3rem] leading-[0.94] text-white sm:text-[4rem] lg:text-[4.75rem]">
+        <h1 class="mt-6 max-w-3xl font-['Cormorant_Garamond'] text-[3rem] leading-[0.94] text-white sm:text-[4rem] lg:text-[4.75rem]" data-i18n="hero_title">
           Une plateforme premium pour découvrir, réserver et valoriser la Corse.
         </h1>
 
-        <p class="mt-8 max-w-2xl text-lg leading-8 text-white/68 sm:text-xl">
+        <p class="mt-8 max-w-2xl text-lg leading-8 text-white/68 sm:text-xl" data-i18n="hero_description">
           Un écosystème Web + Mobile pensé pour le grand public, les partenaires institutionnels, les producteurs et les acteurs touristiques, avec réservations, paiements, gamification, QR codes, géolocalisation et back-offices métiers.
         </p>
 
@@ -25,12 +25,14 @@
           <a
             href="#vision"
             class="inline-flex items-center justify-center rounded-full bg-[#dcc89f] px-7 py-4 text-sm font-semibold text-[#0b1015] shadow-[0_20px_55px_rgba(216,194,150,0.22)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#e7d4ab]"
+            data-i18n="cta_user_journey"
           >
             Voir le parcours utilisateur
           </a>
           <a
             href="#dashboard"
             class="inline-flex items-center justify-center rounded-full border border-white/12 bg-white/[0.05] px-7 py-4 text-sm font-semibold text-white backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:border-[#dcc89f]/35 hover:bg-white/[0.08]"
+            data-i18n="cta_backoffice"
           >
             Explorer le back-office
           </a>
@@ -51,29 +53,29 @@
 
           <div class="relative flex items-center justify-between gap-3">
             <div>
-              <p class="text-xs uppercase tracking-[0.24em] text-white/42">Accueil public</p>
-              <p class="mt-2 font-['Cormorant_Garamond'] text-3xl text-white sm:text-[2.35rem]">Découvrir la Corse vivante</p>
+              <p class="text-xs uppercase tracking-[0.24em] text-white/42" data-i18n="public_home_badge">Accueil public</p>
+              <p class="mt-2 font-['Cormorant_Garamond'] text-3xl text-white sm:text-[2.35rem]" data-i18n="discover_title">Découvrir la Corse vivante</p>
             </div>
-            <div class="rounded-full border border-white/10 bg-white/[0.08] px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/72">
+            <button type="button" class="rounded-full border border-white/10 bg-white/[0.08] px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/72 transition hover:bg-white/[0.14]" data-lang-toggle aria-label="Passer en anglais" title="Passer en anglais">
               FR / EN
-            </div>
+            </button>
           </div>
 
           <div class="relative mt-6 grid gap-4">
             <div class="overflow-hidden rounded-[1.9rem] border border-white/10 bg-[radial-gradient(circle_at_12%_16%,rgba(216,194,150,0.16),transparent_0_28%),linear-gradient(150deg,#19323b_0%,#11181d_58%,#231912_100%)] p-6">
-              <div class="inline-flex rounded-full border border-white/10 bg-white/[0.06] px-3 py-1 text-[11px] uppercase tracking-[0.22em] text-white/55">
+              <div class="inline-flex rounded-full border border-white/10 bg-white/[0.06] px-3 py-1 text-[11px] uppercase tracking-[0.22em] text-white/55" data-i18n="editorial_badge">
                 Territoire éditorial
               </div>
-              <h2 class="mt-4 max-w-md font-['Cormorant_Garamond'] text-4xl leading-none text-white sm:text-[3rem]">
+              <h2 class="mt-4 max-w-md font-['Cormorant_Garamond'] text-4xl leading-none text-white sm:text-[3rem]" data-i18n="territory_title">
                 Territoires, artisans, expériences
               </h2>
-              <p class="mt-4 max-w-lg text-sm leading-7 text-white/68 sm:text-base">
+              <p class="mt-4 max-w-lg text-sm leading-7 text-white/68 sm:text-base" data-i18n="territory_description">
                 Une entrée premium où le récit du territoire rencontre la réservation, le parcours mobile, les producteurs et les expériences à forte valeur émotionnelle.
               </p>
               <div class="mt-7 flex flex-wrap gap-2 text-xs text-white/62">
-                <span class="rounded-full border border-white/10 bg-white/[0.07] px-3 py-1.5">Filières corses</span>
-                <span class="rounded-full border border-white/10 bg-white/[0.07] px-3 py-1.5">Expériences premium</span>
-                <span class="rounded-full border border-white/10 bg-white/[0.07] px-3 py-1.5">Réservation instantanée</span>
+                <span class="rounded-full border border-white/10 bg-white/[0.07] px-3 py-1.5" data-i18n="territory_chip_1">Filières corses</span>
+                <span class="rounded-full border border-white/10 bg-white/[0.07] px-3 py-1.5" data-i18n="territory_chip_2">Expériences premium</span>
+                <span class="rounded-full border border-white/10 bg-white/[0.07] px-3 py-1.5" data-i18n="territory_chip_3">Réservation instantanée</span>
               </div>
             </div>
 
@@ -81,15 +83,15 @@
               <div class="rounded-[1.7rem] border border-white/10 bg-[#101820]/90 p-5">
                 <div class="flex items-center justify-between">
                   <div>
-                    <p class="text-xs uppercase tracking-[0.22em] text-white/42">Carte interactive</p>
-                    <p class="mt-2 text-lg font-semibold text-white">Producteurs géolocalisés</p>
+                    <p class="text-xs uppercase tracking-[0.22em] text-white/42" data-i18n="map_badge">Carte interactive</p>
+                    <p class="mt-2 text-lg font-semibold text-white" data-i18n="map_title">Producteurs géolocalisés</p>
                   </div>
                   <div class="h-10 w-10 rounded-2xl bg-[linear-gradient(145deg,rgba(92,166,184,0.35),rgba(216,194,150,0.15))]"></div>
                 </div>
 
                 <div class="relative mt-5 min-h-[210px] overflow-hidden rounded-[1.45rem] border border-white/10 bg-[linear-gradient(180deg,#0d141a_0%,#121d24_100%)] p-4">
                   <div class="absolute inset-0 opacity-45 [background-image:repeating-radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.08)_0_1px,transparent_1px_18px),repeating-radial-gradient(circle_at_75%_15%,rgba(216,194,150,0.10)_0_1px,transparent_1px_22px)]"></div>
-                  <div class="absolute left-4 top-4 rounded-full border border-white/10 bg-white/[0.08] px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/72">
+                  <div class="absolute left-4 top-4 rounded-full border border-white/10 bg-white/[0.08] px-3 py-1 text-[11px] uppercase tracking-[0.2em] text-white/72" data-i18n="poi_count">
                     128 points d’intérêt
                   </div>
                   <svg viewBox="0 0 180 260" class="relative mx-auto mt-6 h-[170px] w-auto" aria-hidden="true">
@@ -113,8 +115,8 @@
                 <div class="rounded-[1.7rem] border border-white/10 bg-white/[0.05] p-5">
                   <div class="flex items-center justify-between">
                     <div>
-                      <p class="text-xs uppercase tracking-[0.2em] text-white/42">Expérience mobile</p>
-                      <p class="mt-2 text-lg font-semibold text-white">QR, badges & défis</p>
+                      <p class="text-xs uppercase tracking-[0.2em] text-white/42" data-i18n="mobile_badge">Expérience mobile</p>
+                      <p class="mt-2 text-lg font-semibold text-white" data-i18n="mobile_title">QR, badges & défis</p>
                     </div>
                     <div class="h-10 w-10 rounded-2xl bg-[linear-gradient(145deg,rgba(136,119,175,0.30),rgba(92,166,184,0.22))]"></div>
                   </div>
@@ -123,7 +125,7 @@
                     <div class="h-24 rounded-[1.2rem] border border-white/10 bg-[linear-gradient(145deg,rgba(216,194,150,0.28),rgba(92,166,184,0.12))]"></div>
                     <div class="h-24 rounded-[1.2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(92,166,184,0.15),rgba(255,255,255,0.04))]"></div>
                   </div>
-                  <p class="mt-4 text-sm leading-7 text-white/64">
+                  <p class="mt-4 text-sm leading-7 text-white/64" data-i18n="mobile_description">
                     Parcours guidés, scans QR, récompenses et contenus exclusifs activés par la géolocalisation.
                   </p>
                 </div>
@@ -131,17 +133,17 @@
                 <div class="rounded-[1.7rem] border border-white/10 bg-white/[0.05] p-5">
                   <div class="flex items-center justify-between gap-4">
                     <div>
-                      <p class="text-xs uppercase tracking-[0.2em] text-white/42">Paiements & réservations</p>
-                      <p class="mt-2 text-lg font-semibold text-white">Tunnel premium multi-fournisseurs</p>
+                      <p class="text-xs uppercase tracking-[0.2em] text-white/42" data-i18n="payments_badge">Paiements & réservations</p>
+                      <p class="mt-2 text-lg font-semibold text-white" data-i18n="payments_title">Tunnel premium multi-fournisseurs</p>
                     </div>
-                    <div class="rounded-full bg-emerald-300/12 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-100">
+                    <div class="rounded-full bg-emerald-300/12 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-100" data-i18n="secure_badge">
                       Sécurisé
                     </div>
                   </div>
                   <div class="mt-5 grid gap-3 sm:grid-cols-3">
-                    <div class="rounded-[1.2rem] bg-emerald-300/10 px-4 py-4 text-sm text-emerald-100">Réservation atelier</div>
-                    <div class="rounded-[1.2rem] bg-[#5ca6b8]/12 px-4 py-4 text-sm text-cyan-100">Wallets & CB</div>
-                    <div class="rounded-[1.2rem] bg-[#8877af]/10 px-4 py-4 text-sm text-white/80">Reversement auto</div>
+                    <div class="rounded-[1.2rem] bg-emerald-300/10 px-4 py-4 text-sm text-emerald-100" data-i18n="payment_card_1">Réservation atelier</div>
+                    <div class="rounded-[1.2rem] bg-[#5ca6b8]/12 px-4 py-4 text-sm text-cyan-100" data-i18n="payment_card_2">Wallets & CB</div>
+                    <div class="rounded-[1.2rem] bg-[#8877af]/10 px-4 py-4 text-sm text-white/80" data-i18n="payment_card_3">Reversement auto</div>
                   </div>
                 </div>
               </div>
@@ -149,25 +151,143 @@
           </div>
         </div>
 
-        <div class="absolute left-6 top-24 hidden w-52 rounded-[1.5rem] border border-white/10 bg-[#111820]/92 p-4 shadow-[0_24px_70px_rgba(2,6,10,0.34)] backdrop-blur-xl lg:block">
-          <p class="text-[11px] uppercase tracking-[0.2em] text-white/45">Application mobile</p>
-          <p class="mt-3 font-['Cormorant_Garamond'] text-3xl text-white">Parcours découverte</p>
-          <p class="mt-2 text-sm leading-6 text-white/62">
+        <div class="absolute left-2 top-36 hidden w-52 rounded-[1.5rem] border border-white/10 bg-[#111820]/92 p-4 shadow-[0_24px_70px_rgba(2,6,10,0.34)] backdrop-blur-xl lg:block">
+          <p class="text-[11px] uppercase tracking-[0.2em] text-white/45" data-i18n="floating_mobile_badge">Application mobile</p>
+          <p class="mt-3 font-['Cormorant_Garamond'] text-3xl text-white" data-i18n="floating_mobile_title">Parcours découverte</p>
+          <p class="mt-2 text-sm leading-6 text-white/62" data-i18n="floating_mobile_description">
             Défis, itinéraires, badges et scan des savoir-faire corses sur le territoire.
           </p>
         </div>
 
         <div class="absolute -bottom-8 right-6 hidden w-56 rounded-[1.5rem] border border-white/10 bg-[#151b22]/92 p-4 shadow-[0_24px_70px_rgba(2,6,10,0.34)] backdrop-blur-xl md:block">
           <div class="flex items-center justify-between">
-            <span class="text-[11px] uppercase tracking-[0.2em] text-white/45">Paiement</span>
+            <span class="text-[11px] uppercase tracking-[0.2em] text-white/45" data-i18n="floating_payment_badge">Paiement</span>
             <span class="rounded-full bg-[#dcc89f]/14 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-[#f2e7cc]">
               Premium
             </span>
           </div>
-          <p class="mt-4 text-sm text-white/58">Expérience réservée</p>
+          <p class="mt-4 text-sm text-white/58" data-i18n="floating_payment_description">Expérience réservée</p>
           <p class="mt-2 font-['Cormorant_Garamond'] text-4xl text-white">€180</p>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+  const heroRoot = document.querySelector('#hero-ollia');
+
+  if (heroRoot) {
+    const languageToggle = heroRoot.querySelector('[data-lang-toggle]');
+    const translatableNodes = heroRoot.querySelectorAll('[data-i18n]');
+
+    const translations = {
+      fr: {
+        mockup_badge: 'Mockup conceptuel — Ollia® Corsica',
+        destination_badge: 'Destination digitale premium',
+        hero_title: 'Une plateforme premium pour découvrir, réserver et valoriser la Corse.',
+        hero_description:
+          'Un écosystème Web + Mobile pensé pour le grand public, les partenaires institutionnels, les producteurs et les acteurs touristiques, avec réservations, paiements, gamification, QR codes, géolocalisation et back-offices métiers.',
+        cta_user_journey: 'Voir le parcours utilisateur',
+        cta_backoffice: 'Explorer le back-office',
+        public_home_badge: 'Accueil public',
+        discover_title: 'Découvrir la Corse vivante',
+        editorial_badge: 'Territoire éditorial',
+        territory_title: 'Territoires, artisans, expériences',
+        territory_description:
+          'Une entrée premium où le récit du territoire rencontre la réservation, le parcours mobile, les producteurs et les expériences à forte valeur émotionnelle.',
+        territory_chip_1: 'Filières corses',
+        territory_chip_2: 'Expériences premium',
+        territory_chip_3: 'Réservation instantanée',
+        map_badge: 'Carte interactive',
+        map_title: 'Producteurs géolocalisés',
+        poi_count: '128 points d’intérêt',
+        mobile_badge: 'Expérience mobile',
+        mobile_title: 'QR, badges & défis',
+        mobile_description:
+          'Parcours guidés, scans QR, récompenses et contenus exclusifs activés par la géolocalisation.',
+        payments_badge: 'Paiements & réservations',
+        payments_title: 'Tunnel premium multi-fournisseurs',
+        secure_badge: 'Sécurisé',
+        payment_card_1: 'Réservation atelier',
+        payment_card_2: 'Wallets & CB',
+        payment_card_3: 'Reversement auto',
+        floating_mobile_badge: 'Application mobile',
+        floating_mobile_title: 'Parcours découverte',
+        floating_mobile_description:
+          'Défis, itinéraires, badges et scan des savoir-faire corses sur le territoire.',
+        floating_payment_badge: 'Paiement',
+        floating_payment_description: 'Expérience réservée'
+      },
+      en: {
+        mockup_badge: 'Concept mockup — Ollia® Corsica',
+        destination_badge: 'Premium digital destination',
+        hero_title: 'A premium platform to discover, book, and elevate Corsica.',
+        hero_description:
+          'A Web + Mobile ecosystem designed for the public, institutional partners, producers, and tourism stakeholders, with bookings, payments, gamification, QR codes, geolocation, and business back offices.',
+        cta_user_journey: 'View user journey',
+        cta_backoffice: 'Explore back office',
+        public_home_badge: 'Public home',
+        discover_title: 'Discover living Corsica',
+        editorial_badge: 'Editorial territory',
+        territory_title: 'Territories, artisans, experiences',
+        territory_description:
+          'A premium gateway where storytelling meets booking, mobile journeys, local producers, and high-emotion experiences.',
+        territory_chip_1: 'Corsican sectors',
+        territory_chip_2: 'Premium experiences',
+        territory_chip_3: 'Instant booking',
+        map_badge: 'Interactive map',
+        map_title: 'Geolocated producers',
+        poi_count: '128 points of interest',
+        mobile_badge: 'Mobile experience',
+        mobile_title: 'QR, badges & challenges',
+        mobile_description:
+          'Guided routes, QR scans, rewards, and exclusive content activated by geolocation.',
+        payments_badge: 'Payments & bookings',
+        payments_title: 'Premium multi-vendor checkout',
+        secure_badge: 'Secured',
+        payment_card_1: 'Workshop booking',
+        payment_card_2: 'Wallets & cards',
+        payment_card_3: 'Auto payout',
+        floating_mobile_badge: 'Mobile app',
+        floating_mobile_title: 'Discovery journey',
+        floating_mobile_description:
+          'Challenges, routes, badges, and QR scans of Corsican craftsmanship across the territory.',
+        floating_payment_badge: 'Payment',
+        floating_payment_description: 'Reserved experience'
+      }
+    };
+
+    const updateLanguage = (lang) => {
+      const locale = lang === 'en' ? 'en' : 'fr';
+      heroRoot.setAttribute('data-lang', locale);
+
+      translatableNodes.forEach((node) => {
+        const key = node.getAttribute('data-i18n');
+        const nextText = key ? translations[locale][key] : null;
+
+        if (nextText) {
+          node.textContent = nextText;
+        }
+      });
+
+      if (languageToggle) {
+        const nextLabel = locale === 'fr' ? 'Passer en anglais' : 'Switch to French';
+        languageToggle.textContent = locale === 'fr' ? 'FR / EN' : 'EN / FR';
+        languageToggle.setAttribute('aria-label', nextLabel);
+        languageToggle.setAttribute('title', nextLabel);
+      }
+    };
+
+    const savedLanguage = window.localStorage.getItem('ollia-lang');
+    updateLanguage(savedLanguage === 'en' ? 'en' : 'fr');
+
+    languageToggle?.addEventListener('click', () => {
+      const currentLanguage = heroRoot.getAttribute('data-lang') === 'en' ? 'en' : 'fr';
+      const nextLanguage = currentLanguage === 'fr' ? 'en' : 'fr';
+
+      updateLanguage(nextLanguage);
+      window.localStorage.setItem('ollia-lang', nextLanguage);
+    });
+  }
+</script>
